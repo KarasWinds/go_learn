@@ -1,0 +1,16 @@
+package main
+
+import (
+	"fmt"
+
+	"../utils"
+)
+
+func main() {
+	var n1 float64 = 1.2
+	var n2 float64 = 2.4
+	var operator byte = '+'
+	res := utils.Cal(n1, n2, operator)
+	fmt.Println("res =", res)
+	fmt.Printf("res~=%.2f\n", res)
+}
