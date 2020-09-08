@@ -41,7 +41,7 @@ func testMap() {
 	if err != nil {
 		fmt.Printf("序列化錯誤, err:%v\n", err)
 	}
-	fmt.Printf("monster序列化後:%v\n", string(data))
+	fmt.Printf("map序列化後:%v\n", string(data))
 }
 
 func testSlice() {
@@ -64,7 +64,7 @@ func testSlice() {
 	if err != nil {
 		fmt.Printf("序列化錯誤, err:%v\n", err)
 	}
-	fmt.Printf("monster序列化後:%v\n", string(data))
+	fmt.Printf("slice序列化後:%v\n", string(data))
 }
 
 func testFloat64() {
