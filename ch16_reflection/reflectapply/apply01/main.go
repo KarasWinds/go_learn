@@ -57,7 +57,7 @@ func testStruct(a interface{}) {
 	var params []reflect.Value
 	params = append(params, reflect.ValueOf(10))
 	params = append(params, reflect.ValueOf(40))
-	// input []reflect.Vale, return []reflect.value
+	// input []reflect.Vale, return  []reflect.value
 	res := val.Method(0).Call(params)
 	fmt.Println("res=", res[0].Int())
 }
