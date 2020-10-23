@@ -25,7 +25,6 @@ func readData(numChan chan int, resChan chan map[int]int) {
 		}
 		res := calRes(i)
 		resMap[i] = res
-		fmt.Println(resMap)
 		resChan <- resMap
 	}
 }
@@ -38,7 +37,7 @@ func calRes(n int) int {
 }
 
 func main() {
-	numChan := make(chan int, num)
+	numChan := make(chan int)
 	resChan := make(chan map[int]int, num)
 
 	go writeData(numChan)

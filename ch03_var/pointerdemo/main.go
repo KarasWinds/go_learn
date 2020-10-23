@@ -5,7 +5,6 @@ import "fmt"
 func main() {
 	var i int = 10
 	fmt.Printf("i的值:%v\n", i)
-	fmt.Printf("i的值:%p\n", i)
 	fmt.Printf("i的位置:%v\n", &i)
 
 	var ptr *int = &i
